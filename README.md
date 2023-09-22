@@ -2,7 +2,7 @@
 
 ![page1](https://github.com/TnLima/dio-pokedex/assets/93764492/0dc09f51-a231-4267-86b4-dc1b5ac11f66)
 
-TODO: Página de detalhes
+TODO: Página de detalhes <br>
 OBS: Projeto foi criado seguindo o tutorial, apenas partes do código base foram utilizadas.
 
 Página:
