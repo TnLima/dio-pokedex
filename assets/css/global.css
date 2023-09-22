@@ -1,0 +1,228 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    box-sizing: border-box;
+    color: rgba(7, 6, 6, 0.7);
+}
+
+body {
+    background-color: #ececec;
+}
+
+.header {
+    height: 2rem;
+}
+
+.content {
+    padding: 1rem;
+    background-color: white;
+}
+
+.content h1 {
+    padding: 0;
+}
+
+.pokemons {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pokemon {
+    /* height: 5rem; */
+    display: flex;
+    flex-direction: column;
+    margin: .5rem;
+    padding: 1rem;
+    background-color: #1CCAA9;
+    border-radius: .9rem;
+    color: white;
+    height: 10rem;
+
+    -webkit-box-shadow: 4px 4px 5px -4px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 4px 5px -4px rgba(0, 0, 0, 0.1);
+    box-shadow: 4px 4px 6px -5px rgba(0, 0, 0, 0.5);
+
+}
+
+.pokemon .detail img {
+    max-width: 100%;
+    max-height: 70px;
+    align-self: flex-end;
+    list-style: none;
+}
+
+.pokemon .detail {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pokemon .detail .types {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.pokemon .detail .types .type {
+    padding: .5rem;    
+    /* background-color: #61E2CB; */
+    border-radius: .2rem;
+    padding: .25rem .5rem;
+    font-size: .9rem;
+    margin: .2rem;
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.type{
+    filter: brightness(120%);
+}
+
+.pokemon .number {
+    text-align: right;
+    color: black;
+    opacity: .3;
+}
+
+.types {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.name {
+    margin: .25rem;
+    text-transform: capitalize;    
+}
+
+
+@media (min-width: 576px) {
+    .pokemons {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+.btnDock {
+    width: 3.4rem;
+    height: 3.4rem;
+    border-radius: 10rem;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid lightgray 1px;
+
+
+}
+
+.btnDock:hover {
+    background-color: #71bbf7;
+    transition-duration: 500ms;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.dock {
+    background-color:rgba(255, 255, 255, .50);;
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    height: 4rem;
+    align-items: center;
+    outline: solid lightgray 1px;
+    gap: 2rem;
+
+    -webkit-box-shadow: 1px 1px 5px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 4px 5px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: 1px 1px 1px -1px rgba(0, 0, 0, 0.75);
+
+    position: absolute;
+    bottom: .4rem;
+    
+
+}
+
+.icon {
+    height: 1.4rem;
+}
+
+.pokeDexLogo {
+    height: 3.4rem;
+    position: absolute;
+    margin-top: -16px;
+}
+
+.pokeApiLogo {
+    height: 1.6rem;
+    position: absolute;
+    margin-top: 74px;
+}
+
+.headerTitle {
+    margin-top: 50px;
+    font-size: 8px;
+    position: absolute;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.space {
+    padding-top: 74px;
+}
+
+.pkImage{
+    scale: 150%;
+}
+
+.background{
+    position: absolute;
+    z-index: -1;
+    height: 120px;
+    right: -30px;
+    top: -30px;    
+}
+
+.menuIcon{
+    height: 2rem;
+}
+
+.menuItems{
+    position: absolute;
+    right: 14px;
+    top:14px;
+}
+
+.linkDetail{
+    text-decoration: none;
+}
+
+.btnVoltar{
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.mainClass{
+    justify-content: center;   
+    display: flex;
+    width: 100%;
+}

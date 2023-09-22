@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="mainClass">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+
+    <!-- normalize css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/cores.css">
+
+    <!-- fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <img class="background" src="./assets/images/pokeball-background.png" alt="">
+    <header>
+    <image>
+        <img class="pokeDexLogo" src="./assets/images/pokedexLogo.png" alt="">
+        <p class="headerTitle">POWERED BY</p>
+        <img class="pokeApiLogo" src="./assets/images/pokeApiLogo.png" alt="">
+    </image>
+
+    <div class="menuItems">
+        <a href="https://www.linkedin.com/in/thiago-de-lima-980977134/">
+            <img class="menuIcon" src="./assets/icons/burger.svg" alt="">
+        </a>
+    </div>
+
+    <div class="space"></div>
+    </header>
+
+    <section>
+
+
+        <ol id="pokemonCard" class="pokemons">
+            <!-- SCRIPT -->
+        </ol>
+
+
+
+       
+
+
+
+    </section>
+    <div class="footer">
+        <div class="dock">
+            <button class="btnDock" onclick="pokeVolta()">
+                <img class="icon" src="./assets/icons/back.svg" alt="">
+            </button>
+            <p>Navegar</p>
+            <button class="btnDock" onclick="pokeAvanca()">
+                <img class="icon" src="./assets/icons/forward.svg" alt="">
+            </button>
+        </div>
+    </div>
+
+
+    <!-- script -->
+    <script src="./assets/js/pokemon-model.js"></script>
+    <script src="./assets/js/poke-api.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
